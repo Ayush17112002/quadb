@@ -37,7 +37,7 @@ tableElement = tableElement[0];
 
 (async function fetchData() {
   try {
-    const response = await fetch("http://localhost:3000/");
+    const response = await fetch("https://kartikey.me/");
     if (response.status === 400) {
       throw new Error("Could not fetch");
     }
