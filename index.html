@@ -24,20 +24,21 @@
           <select id="currency-inner">
             <option value="INR">INR</option>
           </select>
-          <select id="crypto">
-            <option value="BTC">BTC</option>
-            <option value="ETH">ETH</option>
-            <option value="ETH">USDT</option>
-            <option value="ETH">XRP</option>
-            <option value="ETH">DASH</option>
-            <option value="ETH">TRX</option>
-            <option value="ETH">ZEC</option>
-            <option value="ETH">XEM</option>
-            <option value="ETH">IOST</option>
-            <option value="ETH">WIN</option>
-            <option value="ETH">BIT</option>
-            <option value="ETH">WRX</option>
+          <select id="crypto" onchange="cryptoHandler()">
+            <option value="btc">BTC</option>
+            <option value="eth">ETH</option>
+            <option value="usdt">USDT</option>
+            <option value="xrp">XRP</option>
+            <option value="dash">DASH</option>
+            <option value="trx">TRX</option>
+            <option value="zec">ZEC</option>
+            <option value="xem">XEM</option>
+            <option value="iost">IOST</option>
+            <option value="win">WIN</option>
+            <option value="bit">BIT</option>
+            <option value="wrx">WRX</option>
           </select>
+          <div id="crypto-selected"></div>
         </div>
         <div id="countdown-timer">
           <div id="countdown-number"></div>
@@ -58,17 +59,7 @@
           </label>
         </div>
       </div>
-      <table class="table">
-        <tr>
-          <th scope="col">S.No.</th>
-          <th scope="col">NAME</th>
-          <th scope="col">BUY</th>
-          <th scope="col">SELL</th>
-          <th scope="col">LAST PRICE</th>
-          <th scope="col">VOLUME</th>
-          <th scope="col">BASE UNIT</th>
-        </tr>
-      </table>
+      <table class="table"></table>
     </div>
   </body>
   <script src="script.js"></script>
